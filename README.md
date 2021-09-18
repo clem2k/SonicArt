@@ -5,7 +5,6 @@ Documentation is a Work In Progress, project is not done yet.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
 
-[TOC]
 
 ## List of Materials 
 

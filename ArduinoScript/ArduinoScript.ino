@@ -1,10 +1,10 @@
 // LEDS
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
-#include <avr/power.h> // Required for 16 MHz Adafruit Trinket
+#include <avr/power.h>
 #endif
 #define PIN         4
-#define NUMPIXELS   8
+#define NUMPIXELS   45 // Change here if you don't have the same LED number
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 #define DELAYVAL    500
 
@@ -82,6 +82,9 @@ void setup()
   pinMode(BTN1, INPUT_PULLUP);
   pinMode(BTN2, INPUT_PULLUP);
 
+  // INIT sound : SEGA
+  playFile(1);
+
 }
 
 void waitMilliseconds(uint16_t msWait)
@@ -98,7 +101,7 @@ void waitMilliseconds(uint16_t msWait)
 void playFile(uint16_t id) {
   if (id != 0) {
     mp3.playMp3FolderTrack(id);
-    waitMilliseconds(8000);
+    waitMilliseconds(3000);
   }
 
 }
@@ -125,7 +128,7 @@ void ledAnim02() {
   pixels.show();
 }
 
-void rainbow(int wait) {
+void ledAnim03(int wait) {
   for (long firstPixelHue = 0; firstPixelHue < 5 * 65536; firstPixelHue += 256) {
     for (int i = 0; i < pixels.numPixels(); i++) { // For each pixel in strip...
       int pixelHue = firstPixelHue + (i * 65536L / pixels.numPixels());
@@ -139,26 +142,40 @@ void rainbow(int wait) {
   pixels.show();
 }
 
+int getRnd() {
+  return random(1, 4);
+}
+
+
+void ledAnim(int id) {
+  if (id == 1) {
+    ledAnim01();
+  }
+  if (id == 2) {
+    ledAnim02();
+  }
+  if (id == 3) {
+    ledAnim03(10);
+  }
+}
+
 
 void loop()
 {
-  // MP3
-  playFile(0);
 
-  // LEDS
-  // ledAnim01();
+  // Get random
+  int rndLed = getRnd();
+  int rndSnd = getRnd();
+
 
   // BUTTONS
   button1State = digitalRead(BTN1);
   button2State = digitalRead(BTN2);
   if (button1State == LOW) {
-    playFile(1);
+    playFile(rndSnd);
   }
   if (button2State == LOW) {
-    playFile(1);
-    ledAnim01();
+    ledAnim(rndLed);
   }
-
-
 
 }
