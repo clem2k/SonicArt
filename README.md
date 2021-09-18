@@ -6,6 +6,8 @@ Epoxy Resin and Arduino Sonic The hedgehog art project.
 
 This project is a piece of art combining epoxy resin, some Arduino based electronics and my passion for SEGA Genesis and Sonic the Hedgehog. I've been inspired by the [Nerd Forge](https://thenerdforge.com/) and Martina's epoxy resin paintings (you can see a video [here](https://youtu.be/glsRHkLHvXs)). The goal is to obtain a kind of 3D effect with multiple layers of resin. As I'm not so good in painting, "i totally suck"  would be more accurate, I've decided to print and cut the different layers. If you've got a CNC cutter, or laser you can precisely cut the layers, i did it with my Brother Scan and cut (and included the files).
 
+You can change the artworks and sounds, and use the Arduino code. The code will work and the Gerber file will be the same no matter what you decide to use as graphics and sounds.
+
 
 ## List of Materials 
 
