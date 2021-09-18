@@ -36,7 +36,27 @@ You can obviously change any of the part with some less expensive or more availa
 
 ## Print work
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+All the files are designed to be 18cm by 18cm, the same as the base of my silicon mold, if you'd like to use another mold do not forget to change the size of each art file. In order to have a kind of 3D effect we need to have different layers.
+
+The real background image is Ciel2.jpg, it must be your first layer
+
+![](https://github.com/clem2k/SonicArt/blob/8a44ed843cbbd3b109aedd5d82b67ce09dd609e7/Layers/arts/Ciel2.jpg)
+
+Then comes the mountains in the background Decor1.jpg
+
+![](https://github.com/clem2k/SonicArt/blob/8a44ed843cbbd3b109aedd5d82b67ce09dd609e7/Layers/arts/Decor1.jpg)
+
+Then you'll need Decor2.jpg
+
+![](https://github.com/clem2k/SonicArt/blob/8a44ed843cbbd3b109aedd5d82b67ce09dd609e7/Layers/arts/Decor2.jpg)
+
+Decor3.jpg is the most foreground layer
+
+![](https://github.com/clem2k/SonicArt/blob/main/Layers/arts/Decor3.jpg)
+
+For the remaining files (Access1.jpg, Access2.jpg, Rings.jpg, Sonic.jpg) you can just print and cut them, it's the final foreground layer.
+
+
 
 ## Epoxy Resin work
 
