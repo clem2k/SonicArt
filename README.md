@@ -10,25 +10,27 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed
 
 ### Main components
 
-| Quantity | Description                                         | Buy link                                                     |
-| -------- | --------------------------------------------------- | ------------------------------------------------------------ |
-| 1        | Silicon mould                                       | https://www.amazon.fr/gp/product/B08PP3CKRZ/                 |
-| 1        | MP3 DFplayer                                        | https://www.amazon.fr/gp/product/B07X2CZZDJ/                 |
-| 1        | Individually adressable LED Strip                   | https://www.amazon.fr/gp/product/B08GRG7S97/                 |
-| 1        | Wood and glass Photo Frame                          | https://www.amazon.fr/gp/product/B07BKY4CNX/                 |
-| 1        | 9V Battery holder                                   | https://www.amazon.fr/gp/product/B005AAQTXC/                 |
-| 2        | 1k resistor                                         |                                                              |
-| 1        | Arduino Nano                                        |                                                              |
-| 2        | Push button                                         |                                                              |
-| 1        | On/Off switch                                       |                                                              |
-| 1        | Micro SD Card (the min size available, i use a 1Gb) |                                                              |
-| 5        | 180gr/m² paper  sheets                              |                                                              |
+You can obviously change any of the part with some less expensive or more available, please note the dimensions of the mold : the base of the mould is 18cm x 18cm, and all the graphics I've put together are also 18x18. If you change the mold and have different sizes, do not forget to update the graphics files. If you choose something smaller than 18x18, be advised that cutting will be very tricky as the small parts (such as rings and lives indicator) are really small.
+
+| Quantity | Description                                         | Buy link                                     |
+| -------- | --------------------------------------------------- | -------------------------------------------- |
+| 1        | Silicon mold                                        | https://www.amazon.fr/gp/product/B08PP3CKRZ/ |
+| 1        | MP3 DFplayer                                        | https://www.amazon.fr/gp/product/B07X2CZZDJ/ |
+| 1        | Individually addressable LED Strip                  | https://www.amazon.fr/gp/product/B08GRG7S97/ |
+| 1        | Wood and glass Photo Frame                          | https://www.amazon.fr/gp/product/B07BKY4CNX/ |
+| 1        | 9V Battery holder                                   | https://www.amazon.fr/gp/product/B005AAQTXC/ |
+| 2        | 1k resistor                                         |                                              |
+| 1        | Arduino Nano                                        |                                              |
+| 2        | Push button                                         |                                              |
+| 1        | On/Off switch                                       |                                              |
+| 1        | Micro SD Card (the min size available, i use a 1Gb) |                                              |
+| 5        | 180gr/m² paper  sheets                              |                                              |
 
 ### You'll also need : 
 
 - a printer
 - a soldering iron (and solder, third hand, ...)
-- something to cut the prints (i used a Brother "Scan'n Cut" and scisors)
+- something to cut the prints (i used a Brother "Scan'n Cut" and scissors)
 - Some paper glue
 - Epoxy Resin (I used about 800 grams), protections gloves, some mask, and usual stuff when dealing with epoxy resin (try and ask google for epoxy resin works and safety tips : DO NOT USE EPOXY RESIN if you don't know how to be safe with that kind of products, it's hazardous material : SAFETY FIRST !)
 
