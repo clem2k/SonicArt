@@ -4,7 +4,7 @@ Epoxy Resin and Arduino Sonic The hedgehog art project.
 > Documentation is a Work In Progress, project is not done yet.
 >
 
-This project is a piece of art combining epoxy resin, some Arduino based electronics and my passion for SEGA Genesis and Sonic the Hedgehog. I've been inspired by the [Nerd Forge](https://thenerdforge.com/) and Martina's epoxy resin paintings (you can see a video [here](https://youtu.be/glsRHkLHvXs)). The goal is to obtain a kind of 3D effect with multiple layers of resin. As I'm not so good in painting, "i totally suck"  would be more accurate, I've decided to print and cut the different layers. If you've got a CNC cutter, or laser you can precisely cut the layers, i did it with my Brother Scan and cut (and included the files).
+This project is a piece of art combining epoxy resin, some Arduino based electronics and my passion for SEGA Genesis and Sonic the Hedgehog. I've been inspired by the [Nerd Forge](https://thenerdforge.com/) and Martina's epoxy resin paintings (you can see a video [here](https://youtu.be/glsRHkLHvXs)). The goal is to obtain a kind of 3D effect with multiple layers of resin. As I'm not so good in painting, "I totally suck"  would be more accurate, I've decided to print and cut the different layers. If you've got a CNC cutter, or laser you can precisely cut the layers, I did it with my Brother Scan and cut (and included the files).
 
 You can change the artworks and sounds, and use the Arduino code. The code will work and the Gerber file will be the same no matter what you decide to use as graphics and sounds.
 
@@ -33,7 +33,7 @@ You can obviously change any of the part with some less expensive or more availa
 
 - a printer
 - a soldering iron (and solder, third hand, ...)
-- something to cut the prints (i used a Brother "Scan'n Cut" and scissors)
+- something to cut the prints (I used a Brother "Scan'n Cut" and scissors)
 - Some paper glue
 - Epoxy Resin (I used about 800 grams), protections gloves, some mask, and usual stuff when dealing with epoxy resin (try and ask google for epoxy resin works and safety tips : DO NOT USE EPOXY RESIN if you don't know how to be safe with that kind of products, it's hazardous material : SAFETY FIRST !)
 
@@ -65,7 +65,7 @@ You need to cut all the prints, use whatever you're comfortable with ...
 
 ![](https://github.com/clem2k/SonicArt/blob/9a8291af0378e674c8eff3c7a93f53738c848c58/Pictures/DSC_0230.JPG)
 
-In order to have a good "3D" effect, you'll need to cut the different prints. If you have a scan'n cut from brother, i've included the files in Layers/cuts
+In order to have a good "3D" effect, you'll need to cut the different prints. If you have a scan'n cut from brother, I've included the files in Layers/cuts folder.
 
 ![](https://github.com/clem2k/SonicArt/blob/e6488f15572ae39d30e79057ce608120c8648cc1/Layers/cuts/screenshot.png)
 
@@ -101,9 +101,13 @@ When your resin art is ready, you can determine how many led you'll need. With t
 
 You'll need to prep the frame and cut some holes for the buttons in the frame, you'll need 2 for the sound and led buttons, and another for the on/off switch.
 
+#### Battery holder
+
+The battery holder goes to power on the PCB or directly to the Arduino nano to pins VIN ( + ) and GND ( - ). Do not forget to add a on/off switch button to the red wire of the battery holder, otherwise it'll be always powered up ...
+
 ### PCB
 
-I've designed a PCB, but it's totally optional you can solder directly the components and hot glue them in the frame, I just wanted to make it nice inside also ;-) If you want you can download my Gerber files and use them to make the PCB yourself or to order it from any PCB prototyping service (such as JLCPCB or PCBway). Link to gerber file [here](https://github.com/clem2k/SonicArt/blob/5eb46e809447564e8ae2b53ef5e433ecfa21d3dd/PCB/Gerber_PCB_SonicDuino_2_2021-09-18.zip).
+I've designed a PCB, but it's totally optional you can solder directly the components and hot glue them in the frame, I just wanted to make it nice inside also ;-) If you want you can download my Gerber files and use them to make the PCB yourself or to order it from any PCB prototyping service (such as JLCPCB or PCBway). Link to Gerber file [here](https://github.com/clem2k/SonicArt/blob/5eb46e809447564e8ae2b53ef5e433ecfa21d3dd/PCB/Gerber_PCB_SonicDuino_2_2021-09-18.zip).
 
 ##### Here's the schematics
 
