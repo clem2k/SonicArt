@@ -118,9 +118,37 @@ I've designed a PCB, but it's totally optional you can solder directly the compo
 
 ## Arduino code
 
+### Define your  libraries, pins and variables
+
+The important here is 45 : this is the number of led you've got on your led strip(s). In my case I've got 45 leds. I've used PIN4 for the leds, and pins 6 and 7 for my buttons, later in the code you'll find pins 10 and 11 for the serial MP3 player.
+
+```c++
+// LEDS
+#include <Adafruit_NeoPixel.h>
+#ifdef __AVR__
+#include <avr/power.h>
+#endif
+#define PIN         4
+#define NUMPIXELS   45 // Change here if you don't have the same LED number
+Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
+#define DELAYVAL    500
+
+// BTN
+#define BTN1        6
+#define BTN2        7
+int button1State = 0;
+int button2State = 0;
+
+// MP3
+#include <SoftwareSerial.h>
+#include <DFMiniMp3.h>
+
+```
+
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at fringilla turpis, vel vulputate neque. Curabitur at dui condimentum, sodales ex in, interdum odio. Nullam vitae dolor id neque ornare sodales. Maecenas et dui ac est hendrerit faucibus at at dui. Aenean ultrices viverra vehicula. Nam feugiat leo mauris, sit amet tincidunt orci condimentum at. Vestibulum nulla tortor, tincidunt vitae congue quis, pretium sed leo. Sed nec cursus neque.
 
-The main code
+### The main code
 
 ```c++
 void loop()
