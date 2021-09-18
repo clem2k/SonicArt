@@ -79,15 +79,13 @@ When it's cured, you'll need the first background layer and some paper glue. Pla
 
 ![](https://github.com/clem2k/SonicArt/blob/9a8291af0378e674c8eff3c7a93f53738c848c58/Pictures/DSC_0227.JPG)
 
-![](https://github.com/clem2k/SonicArt/blob/411a8186de10a1695e0643ae4622889aac4b7d9d/Pictures/IMG_20210907_125050.jpg)
-
 Do it again for each layer, till the final layer. For the final layer make it a bit thicker, just as the first one ...
 
 ![](https://github.com/clem2k/SonicArt/blob/9a8291af0378e674c8eff3c7a93f53738c848c58/Pictures/DSC_0236.JPG)
 
 ![](https://github.com/clem2k/SonicArt/blob/9a8291af0378e674c8eff3c7a93f53738c848c58/Pictures/DSC_0237.JPG)
 
-![](https://github.com/clem2k/SonicArt/blob/9a8291af0378e674c8eff3c7a93f53738c848c58/Pictures/DSC_0249.JPG)
+![](https://github.com/clem2k/SonicArt/blob/411a8186de10a1695e0643ae4622889aac4b7d9d/Pictures/IMG_20210907_125050.jpg)
 
 ## Electronic Work
 
