@@ -123,19 +123,20 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at fringilla turpi
 
 The main code
 
-  `// Get random`
-  `int rndLed = getRnd();`
-  `int rndSnd = getRnd();`
+`  // Get random
+  int rndLed = getRnd();
+  int rndSnd = getRnd();
 
-  `// BUTTONS`
-  `button1State = digitalRead(BTN1);`
-  `button2State = digitalRead(BTN2);`
-  `if (button1State == LOW) {`
-    `playFile(rndSnd);`
-  `}`
-  `if (button2State == LOW) {`
-    `ledAnim(rndLed);`
-  `}`
+
+  // BUTTONS
+  button1State = digitalRead(BTN1);
+  button2State = digitalRead(BTN2);
+  if (button1State == LOW) {
+    playFile(rndSnd);
+  }
+  if (button2State == LOW) {
+    ledAnim(rndLed);
+  }`
 
 ## Assembly
 
