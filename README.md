@@ -1,12 +1,52 @@
 # SonicArt
 Epoxy Resin and Arduino Sonic The hedgehog art project.
 
+Documentation is a Work In Progress, project is not done yet.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+
+[TOC]
+
+## List of Materials 
+
+### Main components
+
+| Quantity | Description                                         | Buy link                                                     |
+| -------- | --------------------------------------------------- | ------------------------------------------------------------ |
+| 1        | Silicon mould                                       | https://www.amazon.fr/gp/product/B08PP3CKRZ/                 |
+| 1        | MP3 DFplayer                                        | https://www.amazon.fr/gp/product/B07X2CZZDJ/                 |
+| 1        | Individually adressable LED Strip                   | https://www.amazon.fr/gp/product/B08GRG7S97/                 |
+| 1        | Wood and glass Photo Frame                          | https://www.amazon.fr/gp/product/B07BKY4CNX/                 |
+| 1        | 9V Battery holder                                   | https://www.amazon.fr/Wentronic-Universal-passive-Holders-passives/dp/B005AAQTXC/ |
+| 2        | 1k resistor                                         |                                                              |
+| 1        | Arduino Nano                                        |                                                              |
+| 2        | Push button                                         |                                                              |
+| 1        | On/Off switch                                       |                                                              |
+| 1        | Micro SD Card (the min size available, i use a 1Gb) |                                                              |
+| 5        | 180gr/m² paper  sheets                              |                                                              |
+
+### You'll also need : 
+
+- a printer
+- a soldering iron (and solder, third hand, ...)
+- something to cut the prints (i used a Brother "Scan'n Cut" and scisors)
+- Some paper glue
+- Epoxy Resin (I used about 800 grams), protections gloves, some mask, and usual stuff when dealing with epoxy resin (try and ask google for epoxy resin works and safety tips : DO NOT USE EPOXY RESIN if you don't know how to be safe with that kind of products, it's hazardous material : SAFETY FIRST !)
+
+## Print work
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+
+## Epoxy Resin work
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+
 ## PCB
 
 Here's the schematics
 
-![schematics](https://github.com/clem2k/SonicArt/blob/e133f82bf38153d22ceef6026d7bcf80012214cb/PCB/PCB_PCB_SonicDuino_2_2021-09-18.png)
+![](https://github.com/clem2k/SonicArt/blob/e133f82bf38153d22ceef6026d7bcf80012214cb/PCB/Schematic_SonicDuino_2021-09-18.png)
 
 And the PCB layout
 
-![](https://github.com/clem2k/SonicArt/blob/e133f82bf38153d22ceef6026d7bcf80012214cb/PCB/Schematic_SonicDuino_2021-09-18.png)
+![schematics](https://github.com/clem2k/SonicArt/blob/e133f82bf38153d22ceef6026d7bcf80012214cb/PCB/PCB_PCB_SonicDuino_2_2021-09-18.png)
