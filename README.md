@@ -17,7 +17,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed
 | 1        | MP3 DFplayer                                        | https://www.amazon.fr/gp/product/B07X2CZZDJ/                 |
 | 1        | Individually adressable LED Strip                   | https://www.amazon.fr/gp/product/B08GRG7S97/                 |
 | 1        | Wood and glass Photo Frame                          | https://www.amazon.fr/gp/product/B07BKY4CNX/                 |
-| 1        | 9V Battery holder                                   | https://www.amazon.fr/Wentronic-Universal-passive-Holders-passives/dp/B005AAQTXC/ |
+| 1        | 9V Battery holder                                   | https://www.amazon.fr/gp/product/B005AAQTXC/                 |
 | 2        | 1k resistor                                         |                                                              |
 | 1        | Arduino Nano                                        |                                                              |
 | 2        | Push button                                         |                                                              |
