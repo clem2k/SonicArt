@@ -105,4 +105,5 @@ When all is ready you'll need to assemble the resin in the frame (and maybe cut 
 
 ## Final thoughts
 
-It's just a DIY project and many things could be better, do not hesitate to reach to me via github or twitter ( @clem2k ) if you have some tips or questions.
+It's just a DIY project and many things could be better, do not hesitate to reach to me via github or twitter ( [@clem2k](https://twitter.com/clem2k) ) if you have some tips or questions.
+
