@@ -7,3 +7,4 @@
 1	Arduino Nano
 2	Push button
 1	On/Off switch
+1	Micro SD Card (the min size available, i use a 1Gb)
