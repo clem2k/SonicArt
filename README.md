@@ -1,16 +1,17 @@
 # SonicArt
 Epoxy Resin and Arduino Sonic The hedgehog art project.
 
-Documentation is a Work In Progress, project is not done yet.
+> Documentation is a Work In Progress, project is not done yet.
+>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+This project is a piece of art combining epoxy resin, some Arduino based electronics and my passion for SEGA Genesis and Sonic the Hedgehog. I've been inspired by the [Nerd Forge](https://thenerdforge.com/) and Martina's epoxy resin paintings (you can see a video [here](https://youtu.be/glsRHkLHvXs)). The goal is to obtain a kind of 3D effect with multiple layers of resin. As I'm not so good in painting, "i totally suck"  would be more accurate, I've decided to print and cut the different layers. If you've got a CNC cutter, or laser you can precisely cut the layers, i did it with my Brother Scan and cut (and included the files).
 
 
 ## List of Materials 
 
 ### Main components
 
-You can obviously change any of the part with some less expensive or more available, please note the dimensions of the mold : the base of the mould is 18cm x 18cm, and all the graphics I've put together are also 18x18. If you change the mold and have different sizes, do not forget to update the graphics files. If you choose something smaller than 18x18, be advised that cutting will be very tricky as the small parts (such as rings and lives indicator) are really small.
+You can obviously change any of the part with some less expensive or more available, please note the dimensions of the mold : the base of the mold is 18cm x 18cm, and all the graphics I've put together are also 18x18. If you change the mold and have different sizes, do not forget to update the graphics files. If you choose something smaller than 18x18, be advised that cutting will be very tricky as the small parts (such as rings and lives indicator) are really small.
 
 | Quantity | Description                                         | Buy link                                     |
 | -------- | --------------------------------------------------- | -------------------------------------------- |
@@ -80,28 +81,28 @@ Do it again for each layer, till the final layer. For the final layer make it a 
 
 #### The led strips
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+When your resin art is ready, you can determine how many led you'll need. With the 2 strips i've got i needed 45 leds, so i cut the two strips to length and fixed them with electrical tape led facing the resin. 
 
 #### The Buttons 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+You'll need to prep the frame and cut some holes for the buttons in the frame, you'll need 2 for the sound and led buttons, and another for the on/off switch.
 
 ### PCB
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+I've designed a PCB, but it's totally optional you can solder directly the components and hot glue them in the frame, I just wanted to make it nice inside also ;-) If you want you can download my Gerber files and use them to make the PCB yourself or to order it from any PCB prototyping service (such as JLCPCB or PCBway). Link to gerber file [here](https://github.com/clem2k/SonicArt/blob/5eb46e809447564e8ae2b53ef5e433ecfa21d3dd/PCB/Gerber_PCB_SonicDuino_2_2021-09-18.zip).
 
-Here's the schematics
+##### Here's the schematics
 
 ![](https://github.com/clem2k/SonicArt/blob/e133f82bf38153d22ceef6026d7bcf80012214cb/PCB/Schematic_SonicDuino_2021-09-18.png)
 
-And the PCB layout
+##### And the PCB layout
 
 ![schematics](https://github.com/clem2k/SonicArt/blob/e133f82bf38153d22ceef6026d7bcf80012214cb/PCB/PCB_PCB_SonicDuino_2_2021-09-18.png)
 
 ## Assembly
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+When all is ready you'll need to assemble the resin in the frame (and maybe cut some bezel with black 180g/m² paper), I used hot glue to fix the pcb, the resin and buttons to the frame.
 
 ## Final thoughts
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+It's just a DIY project and many things could be better, do not hesitate to reach to me via github or twitter ( @clem2k ) if you have some tips or questions.
