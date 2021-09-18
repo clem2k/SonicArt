@@ -26,7 +26,7 @@ You can obviously change any of the part with some less expensive or more availa
 | 1        | Micro SD Card (the min size available, i use a 1Gb) |                                              |
 | 5        | 180gr/m² paper  sheets                              |                                              |
 
-### You'll also need : 
+### You'll also need 
 
 - a printer
 - a soldering iron (and solder, third hand, ...)
@@ -68,15 +68,27 @@ In order to have a good "3D" effect, you'll need to cut the different prints. If
 
 Here's the consuming time part ... In your mold you'll need to build a first clear epoxy resin layer. Build it so it's about 5 to 7mm in height. Let it cure for about 1 day (and follow the instructions of your resin manufacturer, if it says more than 24h, then make it so ...). 
 
-
-
 When it's cured, you'll need the first background layer and some paper glue. Place a thin glue layer on the back of the background layer then place it on the cured resin. Pour a new layer of resin, thinner this time, about 3 to 5mm and let it cure (about 24 hours or as said in your instructions again).
 
+![](https://github.com/clem2k/SonicArt/blob/411a8186de10a1695e0643ae4622889aac4b7d9d/Pictures/IMG_20210907_125050.jpg)
 
+Do it again for each layer, till the final layer. For the final layer make it a bit thicker, just as the first one ...
 
+## Electronic Work
 
+### Preparation work
 
-## PCB
+#### The led strips
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+
+#### The Buttons 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+
+### PCB
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
 
 Here's the schematics
 
@@ -85,3 +97,11 @@ Here's the schematics
 And the PCB layout
 
 ![schematics](https://github.com/clem2k/SonicArt/blob/e133f82bf38153d22ceef6026d7bcf80012214cb/PCB/PCB_PCB_SonicDuino_2_2021-09-18.png)
+
+## Assembly
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+
+## Final thoughts
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
