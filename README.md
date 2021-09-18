@@ -117,6 +117,26 @@ I've designed a PCB, but it's totally optional you can solder directly the compo
 
 ![schematics](https://github.com/clem2k/SonicArt/blob/e133f82bf38153d22ceef6026d7bcf80012214cb/PCB/PCB_PCB_SonicDuino_2_2021-09-18.png)
 
+## Arduino code
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at fringilla turpis, vel vulputate neque. Curabitur at dui condimentum, sodales ex in, interdum odio. Nullam vitae dolor id neque ornare sodales. Maecenas et dui ac est hendrerit faucibus at at dui. Aenean ultrices viverra vehicula. Nam feugiat leo mauris, sit amet tincidunt orci condimentum at. Vestibulum nulla tortor, tincidunt vitae congue quis, pretium sed leo. Sed nec cursus neque.
+
+The main code
+
+  `// Get random`
+  `int rndLed = getRnd();`
+  `int rndSnd = getRnd();`
+
+  `// BUTTONS`
+  `button1State = digitalRead(BTN1);`
+  `button2State = digitalRead(BTN2);`
+  `if (button1State == LOW) {`
+    `playFile(rndSnd);`
+  `}`
+  `if (button2State == LOW) {`
+    `ledAnim(rndLed);`
+  `}`
+
 ## Assembly
 
 When all is ready you'll need to assemble the resin in the frame (and maybe cut some bezel with black 180g/m² paper), I used hot glue to fix the pcb, the resin and buttons to the frame.
