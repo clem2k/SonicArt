@@ -56,11 +56,25 @@ Decor3.jpg is the most foreground layer
 
 For the remaining files (Access1.jpg, Access2.jpg, Rings.jpg, Sonic.jpg) you can just print and cut them, it's the final foreground layer.
 
+## Cut Work
 
+In order to have a good "3D" effect, you'll need to cut the different prints. If you have a scan'n cut from brother, i've included the files in Layers/cuts
+
+![](https://github.com/clem2k/SonicArt/blob/e6488f15572ae39d30e79057ce608120c8648cc1/Layers/cuts/screenshot.png)
 
 ## Epoxy Resin work
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales massa sed est ultrices, eget sollicitudin diam iaculis. Aliquam ut lacus vitae leo elementum tristique. Suspendisse nulla augue, aliquam et ligula quis, gravida pharetra est. Integer ac facilisis diam, at dignissim diam. Curabitur sit amet ex velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. Proin at mattis augue.
+> Please refer to tutorials about epoxy resin, do not try epoxy resin if you don't know how to do it safely. Epoxy resin is hazardous material so please be careful and follow your resin manufacturer instructions.
+
+Here's the consuming time part ... In your mold you'll need to build a first clear epoxy resin layer. Build it so it's about 5 to 7mm in height. Let it cure for about 1 day (and follow the instructions of your resin manufacturer, if it says more than 24h, then make it so ...). 
+
+
+
+When it's cured, you'll need the first background layer and some paper glue. Place a thin glue layer on the back of the background layer then place it on the cured resin. Pour a new layer of resin, thinner this time, about 3 to 5mm and let it cure (about 24 hours or as said in your instructions again).
+
+
+
+
 
 ## PCB
 
