@@ -2,7 +2,6 @@
 Epoxy Resin and Arduino Sonic The hedgehog art project.
 
 > Documentation is a Work In Progress, project is not done yet.
->
 
 This project is a piece of art combining epoxy resin, some Arduino based electronics and my passion for SEGA Genesis and Sonic the Hedgehog. I've been inspired by the [Nerd Forge](https://thenerdforge.com/) and Martina's epoxy resin paintings (you can see a video [here](https://youtu.be/glsRHkLHvXs)). The goal is to obtain a kind of 3D effect with multiple layers of resin. As I'm not so good in painting, "I totally suck"  would be more accurate, I've decided to print and cut the different layers. If you've got a CNC cutter, or laser you can precisely cut the layers, I did it with my Brother Scan and cut (and included the files).
 
@@ -123,20 +122,24 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at fringilla turpi
 
 The main code
 
-`  // Get random
-  int rndLed = getRnd();
-  int rndSnd = getRnd();
+```c++
+void loop()
+{
+	// Get random
+	int rndLed = getRnd();
+	int rndSnd = getRnd();
 
-
-  // BUTTONS
-  button1State = digitalRead(BTN1);
-  button2State = digitalRead(BTN2);
-  if (button1State == LOW) {
-    playFile(rndSnd);
-  }
-  if (button2State == LOW) {
-    ledAnim(rndLed);
-  }`
+	// BUTTONS
+	button1State = digitalRead(BTN1);
+	button2State = digitalRead(BTN2);
+	if (button1State == LOW) {
+  		playFile(rndSnd);
+	}
+	if (button2State == LOW) {
+		ledAnim(rndLed);
+	}
+}
+```
 
 ## Assembly
 
