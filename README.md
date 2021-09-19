@@ -271,5 +271,5 @@ When all is ready you'll need to assemble the resin in the frame (and maybe cut 
 
 It's just a DIY project and many things could be better, do not hesitate to reach to me via github or twitter ( [@clem2k](https://twitter.com/clem2k) ) if you have some tips or questions.
 
-I'll probably refactor, update the code to have another version more clean, and I also plan to have another led animation that matches the colors of my design (I want another one that matches the pictures as a Philips Ambilight on TV) so follow the repo if you're interested ;-)
+I'll probably refactor, update the code to have another version cleaner, and I also plan to have another led animation that matches the colors of my design (I want another one that matches the pictures as a Philips Ambilight on TV) so follow the repo if you're interested ;-)
 
