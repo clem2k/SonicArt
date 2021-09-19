@@ -1,7 +1,7 @@
 # SonicArt
 Epoxy Resin and Arduino Sonic The hedgehog art project.
 
-> Documentation is a Work In Progress, project is not done yet.
+> **Documentation is a Work In Progress, project is not done yet. I still haven't received the final PCB and so I did not test the project as a whole. I still need to do some wood work on the frame to place the buttons and the switch, and I need to finish the leds part with the full strip as I messed up the first one I've got ... -_-** 
 
 This project is a piece of art combining epoxy resin, some Arduino based electronics and my passion for SEGA Genesis and Sonic the Hedgehog. I've been inspired by the [Nerd Forge](https://thenerdforge.com/) and Martina's epoxy resin paintings (you can see a video [here](https://youtu.be/glsRHkLHvXs)). The goal is to obtain a kind of 3D effect with multiple layers of resin. As I'm not so good in painting, "I totally suck"  would be more accurate, I've decided to print and cut the different layers. If you've got a CNC cutter, or laser you can precisely cut the layers, I did it with my Brother Scan and cut (and included the files).
 
@@ -92,7 +92,7 @@ Do it again for each layer, till the final layer. For the final layer make it a 
 
 #### The led strips
 
-When your resin art is ready, you can determine how many led you'll need. With the 2 strips i've got i needed 45 leds, so i cut the two strips to length and fixed them with electrical tape led facing the resin. 
+When your resin art is ready, you can determine how many led you'll need. With the 2 strips i've got i needed 45 leds, so i cut the two strips to length and fixed them with electrical tape led facing the resin. ***WIP : I'm waiting for another led strip as I messed up the first one when fixing it to the resin ... -_-***
 
 ![](https://github.com/clem2k/SonicArt/blob/9a8291af0378e674c8eff3c7a93f53738c848c58/Pictures/DSC_0259.JPG)
 
@@ -144,13 +144,105 @@ int button2State = 0;
 #include <DFMiniMp3.h>
 
 ```
+### Setup
+
+In this part of the code we need to setup the libraries and button listening. The button are defined as INPUT_PULLUP as I didn't use any resistors, the volume is set to "12" : not to loud, not to low, and at the end of the init sequence the code will play the iconic "SEGA" sound from the Sonic cartridge.
+
+```c++
+void setup()
+{
+  // MP3
+  mp3.begin();
+  uint16_t volume = mp3.getVolume();
+  mp3.setVolume(12);
+  uint16_t count = mp3.getTotalTrackCount(DfMp3_PlaySource_Sd);
+
+  // LEDS
+  pixels.begin();
+
+  // BUTTONS
+  pinMode(BTN1, INPUT_PULLUP);
+  pinMode(BTN2, INPUT_PULLUP);
+
+  // INIT sound : SEGA
+  playFile(1);
+
+}
+
+```
+### Sound player
+
+Just a little method that will play any file by id. If id is 1 then the file /mp3/0001.mp3 from the DFPlayer will be played. Id in my cas can be 1, 2 or 3, as I have only 3 MP3 sound files. Just after I added a 3 seconds delay in order not to play another file again, you can adjust the delay in ms by changing the 3000 value.
+
+```c++
+void playFile(uint16_t id) {
+  if (id != 0) {
+    mp3.playMp3FolderTrack(id);
+    waitMilliseconds(3000);
+  }
+}
+```
+### Led animations
+
+The first method will display each led with BLUE at maximum brightness then move to the next after switching off the previous led. The animation is quite fast on this one.
+
+The second one will light every led one after another, keeping the previous one on, with BLUE at maximum brightness (and yes again BLUE, it's sonic after all). 
+
+You can change the color and brightness by adjusting the (0 , 0 , 255) values : first value is GREEN, then RED, then BLUE, and you can go from 0 to 255 to set brightness.
+
+The last animation method is a "rainbow", it's an adaptation from the sample file from ADAFRUIT NEOPIXEL.
+
+```c++
+void ledAnim01() {
+  pixels.clear();
+  for (int i = 0; i < NUMPIXELS; i++) {
+    pixels.clear(); // to reset previous leds
+    pixels.setPixelColor(i, pixels.Color(0, 0, 255));
+    pixels.show();
+    delay(DELAYVAL / 5);
+  }
+  pixels.clear();
+  pixels.show();
+}
+void ledAnim02() {
+  pixels.clear();
+  for (int i = 0; i < NUMPIXELS; i++) {
+    pixels.setPixelColor(i, pixels.Color(0, 0, 255));
+    pixels.show();
+    delay(DELAYVAL / 2);
+  }
+  pixels.clear();
+  pixels.show();
+}
+
+void ledAnim03(int wait) {
+  for (long firstPixelHue = 0; firstPixelHue < 5 * 65536; firstPixelHue += 256) {
+    for (int i = 0; i < pixels.numPixels(); i++) { // For each pixel in strip...
+      int pixelHue = firstPixelHue + (i * 65536L / pixels.numPixels());
+      pixels.setPixelColor(i, pixels.gamma32(pixels.ColorHSV(pixelHue)));
+    }
+    pixels.show(); // Update strip with new contents
+    delay(wait);  // Pause for a moment
+
+  }
+  pixels.clear();
+  pixels.show();
+}
 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at fringilla turpis, vel vulputate neque. Curabitur at dui condimentum, sodales ex in, interdum odio. Nullam vitae dolor id neque ornare sodales. Maecenas et dui ac est hendrerit faucibus at at dui. Aenean ultrices viverra vehicula. Nam feugiat leo mauris, sit amet tincidunt orci condimentum at. Vestibulum nulla tortor, tincidunt vitae congue quis, pretium sed leo. Sed nec cursus neque.
+```
+
+
 
 ### The main code
 
+The main code will generate 2 random integers (possible values 1, 2 or 3). Then it'll wait for a button to be pushed. If button1 is pushed then the code will play one of the 3 MP3 files, if button2 is pushed then it will trigger one of the 3 led animations.
+
 ```c++
+int getRnd() {
+  return random(1, 4);
+}
+
 void loop()
 {
 	// Get random
@@ -171,9 +263,13 @@ void loop()
 
 ## Assembly
 
-When all is ready you'll need to assemble the resin in the frame (and maybe cut some bezel with black 180g/m² paper), I used hot glue to fix the pcb, the resin and buttons to the frame.
+When all is ready you'll need to assemble the resin in the frame (and maybe cut some bezel with black 180g/m² paper), I used hot glue to fix the PCB, the resin and buttons to the frame.
 
-## Final thoughts
+## Final thoughts and tips
+
+**DO NOT USE HOT GLUE TO ATTACH THE LEDS** : I've messed a lot of the tiny resistors when I tried to hot glue the strips to the resins, I tried to fix it and reattach the strips with electrical tape instead but the damage was too big, so I did need to order another led strip ... MAKE/FAIL/MAKE/FAIL ... as Evan & Katelyn always say ;-) 
 
 It's just a DIY project and many things could be better, do not hesitate to reach to me via github or twitter ( [@clem2k](https://twitter.com/clem2k) ) if you have some tips or questions.
+
+I'll probably refactor, update the code to have another version more clean, and I also plan to have another led animation that matches the colors of my design (I want another one that matches the pictures as a Philips Ambilight on TV) so follow the repo if you're interested ;-)
 
