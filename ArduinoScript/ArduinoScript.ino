@@ -84,7 +84,7 @@ void setup()
 
   // INIT sound : SEGA
   playFile(1);
-
+  ledAnim01();
 }
 
 void waitMilliseconds(uint16_t msWait)
@@ -127,7 +127,6 @@ void ledAnim02() {
   pixels.clear();
   pixels.show();
 }
-
 void ledAnim03(int wait) {
   for (long firstPixelHue = 0; firstPixelHue < 5 * 65536; firstPixelHue += 256) {
     for (int i = 0; i < pixels.numPixels(); i++) { // For each pixel in strip...
@@ -141,9 +140,21 @@ void ledAnim03(int wait) {
   pixels.clear();
   pixels.show();
 }
+void ledAnim04() {
+  pixels.clear();
+  for (int i = 0; i < NUMPIXELS; i++) {
+    pixels.clear(); // to reset previous leds
+    pixels.setPixelColor(getLedPosition(i), pixels.Color(255, 255, 255));
+    pixels.show();
+    delay(DELAYVAL / 5);
+  }
+  pixels.clear();
+  pixels.show();
+}
 
-int getRnd() {
-  return random(1, 4);
+int getRnd(int max) {
+  max = max + 1;
+  return random(1, max);
 }
 
 
@@ -157,16 +168,23 @@ void ledAnim(int id) {
   if (id == 3) {
     ledAnim03(10);
   }
+  if (id == 4) {
+    ledAnim04();
+  }
 }
 
-int getLedPosition(int position){
+int getLedPosition(int position) {
   int newStart = 12;
   int newPosition = 0;
   position += 1;
   // 1 => 13 , 12 => 24 , 13 => 1
-  if(position <= newStart){ newPosition = position + newStart - 1;}
-  if(position >  newStart){ newPosition = position - newStart - 1;}
-  
+  if (position <= newStart) {
+    newPosition = position + newStart - 1;
+  }
+  if (position >  newStart) {
+    newPosition = position - newStart - 1;
+  }
+
 
   return newPosition;
 }
@@ -176,8 +194,8 @@ void loop()
 {
 
   // Get random
-  int rndLed = getRnd();
-  int rndSnd = getRnd();
+  int rndLed = getRnd(3); // 3 sons
+  int rndSnd = getRnd(4); // 4 led anims
 
 
   // BUTTONS
