@@ -4,7 +4,7 @@
 #include <avr/power.h>
 #endif
 #define PIN         4
-#define NUMPIXELS   45 // Change here if you don't have the same LED number
+#define NUMPIXELS   24 // Change here if you don't have the same LED number
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 #define DELAYVAL    500
 
@@ -110,7 +110,7 @@ void ledAnim01() {
   pixels.clear();
   for (int i = 0; i < NUMPIXELS; i++) {
     pixels.clear(); // to reset previous leds
-    pixels.setPixelColor(i, pixels.Color(0, 0, 255));
+    pixels.setPixelColor(getLedPosition(i), pixels.Color(0, 0, 255));
     pixels.show();
     delay(DELAYVAL / 5);
   }
@@ -120,7 +120,7 @@ void ledAnim01() {
 void ledAnim02() {
   pixels.clear();
   for (int i = 0; i < NUMPIXELS; i++) {
-    pixels.setPixelColor(i, pixels.Color(0, 0, 255));
+    pixels.setPixelColor(getLedPosition(i), pixels.Color(0, 0, 255));
     pixels.show();
     delay(DELAYVAL / 2);
   }
@@ -132,7 +132,7 @@ void ledAnim03(int wait) {
   for (long firstPixelHue = 0; firstPixelHue < 5 * 65536; firstPixelHue += 256) {
     for (int i = 0; i < pixels.numPixels(); i++) { // For each pixel in strip...
       int pixelHue = firstPixelHue + (i * 65536L / pixels.numPixels());
-      pixels.setPixelColor(i, pixels.gamma32(pixels.ColorHSV(pixelHue)));
+      pixels.setPixelColor(getLedPosition(i), pixels.gamma32(pixels.ColorHSV(pixelHue)));
     }
     pixels.show(); // Update strip with new contents
     delay(wait);  // Pause for a moment
@@ -157,6 +157,18 @@ void ledAnim(int id) {
   if (id == 3) {
     ledAnim03(10);
   }
+}
+
+int getLedPosition(int position){
+  int newStart = 12;
+  int newPosition = 0;
+  position += 1;
+  // 1 => 13 , 12 => 24 , 13 => 1
+  if(position <= newStart){ newPosition = position + newStart - 1;}
+  if(position >  newStart){ newPosition = position - newStart - 1;}
+  
+
+  return newPosition;
 }
 
 
