@@ -3,14 +3,14 @@
 #ifdef __AVR__
 #include <avr/power.h>
 #endif
-#define PIN         4
+#define PIN         2
 #define NUMPIXELS   24 // Change here if you don't have the same LED number
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 #define DELAYVAL    500
 
 // BTN
-#define BTN1        6
-#define BTN2        7
+#define BTN1        4
+#define BTN2        5
 int button1State = 0;
 int button2State = 0;
 
