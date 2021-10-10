@@ -1,8 +1,6 @@
 # SonicArt
 Epoxy Resin and Arduino Sonic The hedgehog art project.
 
-> ***Documentation is a Work In Progress, project is not done yet. I still haven't received the final PCB and so I did not test the project as a whole. I still need to do some wood work on the frame to place the buttons and the switch, and I need to finish the leds part with the full strip as I messed up the first one I've got ...*** 
-
 This project is a piece of art combining epoxy resin, some Arduino based electronics and my passion for SEGA Genesis and Sonic the Hedgehog. I've been inspired by the [Nerd Forge](https://thenerdforge.com/) and Martina's epoxy resin paintings (you can see a video [here](https://youtu.be/glsRHkLHvXs)). The goal is to obtain a kind of 3D effect with multiple layers of resin. As I'm not so good in painting, "I totally suck"  would be more accurate, I've decided to print and cut the different layers. If you've got a CNC cutter, or laser you can precisely cut the layers, I did it with my Brother Scan and cut (and included the files).
 
 You can change the artworks and sounds, and use the Arduino code. The code will work and the Gerber file will be the same no matter what you decide to use as graphics and sounds.
@@ -128,14 +126,14 @@ The important here is 45 : this is the number of led you've got on your led stri
 #ifdef __AVR__
 #include <avr/power.h>
 #endif
-#define PIN         4
+#define PIN         2
 #define NUMPIXELS   45 // Change here if you don't have the same LED number
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 #define DELAYVAL    500
 
 // BTN
-#define BTN1        6
-#define BTN2        7
+#define BTN1        4
+#define BTN2        5
 int button1State = 0;
 int button2State = 0;
 
