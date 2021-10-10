@@ -271,3 +271,8 @@ It's just a DIY project and many things could be better, do not hesitate to reac
 
 I'll probably refactor, update the code to have another version cleaner, and I also plan to have another led animation that matches the colors of my design (I want another one that matches the pictures as a Philips Ambilight on TV) so follow the repo if you're interested ;-)
 
+# The result 
+
+![](https://github.com/clem2k/SonicArt/blob/96b5562ddacc7eb4ff9b421fea2b005284cf0352/Pictures/1633711191324.jpg)
+
+![](https://github.com/clem2k/SonicArt/blob/96b5562ddacc7eb4ff9b421fea2b005284cf0352/Pictures/1633711191325.jpg)
