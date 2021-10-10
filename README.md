@@ -118,7 +118,7 @@ I've designed a PCB, but it's totally optional you can solder directly the compo
 
 ### Define your  libraries, pins and variables
 
-The important here is 45 : this is the number of led you've got on your led strip(s). In my case I've got 45 leds. I've used PIN4 for the leds, and pins 6 and 7 for my buttons, later in the code you'll find pins 10 and 11 for the serial MP3 player.
+The important here is 24 : this is the number of led you've got on your led strip(s). In my case I've got 45 leds. I've used PIN4 for the leds, and pins 6 and 7 for my buttons, later in the code you'll find pins 10 and 11 for the serial MP3 player.
 
 ```c++
 // LEDS
@@ -127,7 +127,7 @@ The important here is 45 : this is the number of led you've got on your led stri
 #include <avr/power.h>
 #endif
 #define PIN         2
-#define NUMPIXELS   45 // Change here if you don't have the same LED number
+#define NUMPIXELS   24 // Change here if you don't have the same LED number
 Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
 #define DELAYVAL    500
 
