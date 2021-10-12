@@ -90,7 +90,7 @@ Do it again for each layer, till the final layer. For the final layer make it a 
 
 #### The led strips
 
-When your resin art is ready, you can determine how many led you'll need. With the 2 strips i've got i needed 45 leds, so i cut the two strips to length and fixed them with electrical tape led facing the resin. ***WIP : I'm waiting for another led strip as I messed up the first one when fixing it to the resin ... -_-***
+When your resin art is ready, you can determine how many led you'll need. With the 2 strips i've got i needed 45 leds, so i cut the two strips to length and fixed them with electrical tape led facing the resin. 
 
 ![](https://github.com/clem2k/SonicArt/blob/9a8291af0378e674c8eff3c7a93f53738c848c58/Pictures/DSC_0259.JPG)
 
@@ -118,7 +118,7 @@ I've designed a PCB, but it's totally optional you can solder directly the compo
 
 ### Define your  libraries, pins and variables
 
-The important here is 24 : this is the number of led you've got on your led strip(s). In my case I've got 45 leds. I've used PIN4 for the leds, and pins 6 and 7 for my buttons, later in the code you'll find pins 10 and 11 for the serial MP3 player.
+The important here is 24 : this is the number of led you've got on your led strip(s). In my case I've got 24 leds. I've used PIN 2 for the leds, and pins 4 and 5 for my buttons, later in the code you'll find pins 10 and 11 for the serial MP3 player.
 
 ```c++
 // LEDS
